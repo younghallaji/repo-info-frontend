@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/v1/api/github"; 
+const API_BASE_URL = "https://repo-info-backend.onrender.com/v1/api/github"; 
 
 export const fetchRepoInfo = async (repoNames) => {
   try {

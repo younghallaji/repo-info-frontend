@@ -7,12 +7,12 @@ const useFetchRepo = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const getRepoInfo = async (repoNames) => {
+  const getRepoInfo = async (repoName) => {
     setLoading(true);
     setRepo([]);
     setError(null);
     try {
-      const data = await fetchRepoInfo(repoNames);
+      const data = await fetchRepoInfo(repoName);
       setRepo(data.data);
     } catch (err) {
       Swal.fire({

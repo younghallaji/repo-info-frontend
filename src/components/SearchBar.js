@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const SearchBar = ({ onSearch, loading }) => {
-  const [repoNames, setrepoNames] = useState("");
+  const [repoName, setrepoName] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (repoNames.trim()) {
-      onSearch(repoNames);
+    if (repoName.trim()) {
+      onSearch(repoName);
     }
   };
 
@@ -17,8 +17,8 @@ const SearchBar = ({ onSearch, loading }) => {
           type="text"
           className="form-control"
           placeholder="Enter repo (e.g., facebook/react)"
-          value={repoNames}
-          onChange={(e) => setrepoNames(e.target.value)}
+          value={repoName}
+          onChange={(e) => setrepoName(e.target.value)}
         />
         <button disabled={loading} className="btn btn-primary" type="submit">
           {loading ? (

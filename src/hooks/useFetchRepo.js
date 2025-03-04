@@ -17,9 +17,9 @@ const useFetchRepo = () => {
     } catch (err) {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
+        title: "Oops...", 
         text: err,
-        footer: "Please check the repo name and try again.",
+        footer: "Please check the repo name then try again.",
       });
       setError(err);
     } finally {

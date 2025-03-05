@@ -1,6 +1,13 @@
-.container {
+  body{
+    background: #d1c4c4;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .container {
     text-align: center;
     margin-top: 50px;
+    
   }
   
   .search-bar input {
